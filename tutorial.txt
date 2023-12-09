@@ -1,0 +1,58 @@
+- ng new ngFlix --standalone=false
+  -- (con scss, sin ssr)
+
+- npm run start
+
+- En la carpeta assets se añaden: logos, fonts, icons, etc
+
+- Instalar extensiones vscode: "Angular Language Service"
+
+- Instalar Prettier:
+  -- Instalar extensiones vscode: "Prettier"
+  -- Ejecutar comando: npm install prettier -D --save-exact
+  -- Crear fichero: ".prettierrc" y ponerle el contenido que se indica en la url: "prettier.io/docs/en/configuration.html" , es decir:
+  {
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true
+  }
+  -- Pulsar en vscode: "ctrl + shift + p" y escribir y seleccionar: "Format Document"
+  --
+
+- Installing ESLint
+
+- Extensions To Speed Up The Coding Productivity
+
+==== Application Initialization ======
+
+- Design Overview and Page Structure
+  -- Header (No cambia al navegar entre páginas)
+    --- Logo
+    --- Navigation
+  -- Page Content (SI Cambia al navegar entre páginas)
+  -- Footer (No cambia al navegar entre páginas)
+
+- Installing and Configuring Fonts (Google Fonts)
+  -- Ir a Google Fonts Web Site -> Click en una font
+    --- Insertar mediante <link>:
+      ---- index.html:
+        ----- <link href="https://fonts.googleapis.com/css2?family=Roboto... />
+      ---- styles.scss:
+        ----- body { font-family: 'Roboto', sans-serif; }
+    --- Insertar mediante @import:
+      ---- styles.scss: 
+        ----- @import url('https://fonts.googleapis.com/css2?family=Roboto...');
+        ----- body { font-family: 'Roboto', sans-serif; font-weight: 100 (si no se aplica poner el !important) }
+  -- styles.scss Para estilos globales / app.component.scss Para estilos del componente
+
+- Styles Initialization - important
+  -- Sirve para resetear todos los estilos de las tag html y ponerlas por defecto
+  -- npm install modern-normalize
+  -- styles.scss:
+    --- Poner el @import al principio del fichero, el primero que se importa
+    --- @import 'node_modules/modern-normalize/modern-normalize.css';
+  -- Para comprobar si funciona, abrir herramienta de desarrollador y ver si la etiqueta html tiene algun elemento css que provenga del archivo "modern-normalize.css"
+
+- Installing Grid System - PrimeFlex
+  -- 
