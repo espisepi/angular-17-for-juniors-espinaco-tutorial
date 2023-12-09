@@ -19,3 +19,19 @@
   }
   -- Pulsar en vscode: "ctrl + shift + p" y escribir y seleccionar: "Format Document"
   --
+
+- Installing ESLint
+
+- Extensions To Speed Up The Coding Productivity
+
+==== Application Initialization ======
+
+- Design Overview and Page Structure
+  -- Header (No cambia al navegar entre páginas)
+  --- Logo
+  --- Navigation
+  -- Page Content (SI Cambia al navegar entre páginas)
+  -- Footer (No cambia al navegar entre páginas)
+
+- Installing and Configuring Fonts (Google Fonts)
+  -- Ir a Google Fonts Web Site -> Click en una font
